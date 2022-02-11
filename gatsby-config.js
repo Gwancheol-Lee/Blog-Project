@@ -6,7 +6,7 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-typescript`,
+      resolve: 'gatsby-plugin-typescript',
       options: {
         isTSX: true,
         allExtensions: true,
@@ -16,14 +16,14 @@ module.exports = {
     // {
     //   resolve: `gatsby-source-filesystem`,
     //   options: {
-    //     name: `images`,
-    //     path: `${__dirname}/src/images`,
+    //     name: `contents`,
+    //     path: `${__dirname}/contents`,
     //   },
     // },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
+    // To learn more, visit: <https://gatsby.dev/offline>
     // `gatsby-plugin-offline`,
   ],
 };
