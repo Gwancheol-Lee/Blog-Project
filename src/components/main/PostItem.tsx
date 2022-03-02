@@ -2,7 +2,7 @@ import React, { FunctionComponent } from 'react'
 import styled from '@emotion/styled'
 import { Link } from 'gatsby'
 import { PostFrontmatterType } from 'types/PostItem.types'
-import { GatsbyImage } from 'gatsby-plugin-image/dist/src/components/gatsby-image.browser'
+import { GatsbyImage } from 'gatsby-plugin-image'
 
 type PostItemProps = PostFrontmatterType & { link: string }
 
@@ -86,7 +86,9 @@ const PostItem: FunctionComponent<PostItemProps> = function ({
     date,
     categories, 
     summary, 
-    thumbnail: { gatsbyImageData }, 
+    thumbnail: { 
+        childImageSharp: { gatsbyImageData }    
+    }, 
     link
 }) {
     return(
