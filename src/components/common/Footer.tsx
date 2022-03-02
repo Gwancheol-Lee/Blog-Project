@@ -9,13 +9,17 @@ const FooterWrapper = styled.div`
     font-size: 15px;
     text-align: center;
     line-height: 1.5;
+
+    @media (max-width: 768px) {
+        font-size: 13px;
+    }
 `
 
 const Footer: FunctionComponent = function () {
     return(
         <FooterWrapper>
-            Thank You for Visiting My Blog, Have a Good Day 😆
-            <br />© 2021 Developer Cheol, Powered By Gatsby.
+            제 블로그를 찾아주셔서 감사합니다, 좋은 하루 되세요 😆
+            <br />© 2022 웹 개발자 관절, Powered By Gatsby.
         </FooterWrapper>
     )
 }
