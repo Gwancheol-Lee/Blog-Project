@@ -7,7 +7,7 @@
   "dependencies": {
     "@emotion/react": "^11.8.1",
     "@emotion/styled": "^11.8.1",
-    "gatsby": "^4.9.0",
+    "gatsby": "^3.14.6",
     "gatsby-link": "^4.9.0",
     "gatsby-plugin-emotion": "^7.8.0",
     "gatsby-plugin-gatsby-cloud": "^4.7.0",
@@ -28,6 +28,7 @@
     "gatsby-transformer-sharp": "^4.9.0",
     "prismjs": "^1.27.0",
     "prop-types": "^15.8.0",
+    "query-string": "^7.1.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-helmet": "^6.1.0",
