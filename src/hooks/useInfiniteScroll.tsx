@@ -15,6 +15,7 @@ const useInfiniteScroll = function (
     const containerRef: MutableRefObject<HTMLDivElement | null> = useRef<HTMLDivElement> ( null ) 
     const [count, setCount] = useState<number>(1)
     const postListByCategory = useMemo<PostListItemType[]>(
+        console.log("Test");
         () => posts.filter(({ node: { frontmatter: { categories } } }: PostListItemType) =>
             selectedCategory !== 'All'
                 ? categories.includes(selectedCategory)
@@ -23,6 +24,7 @@ const useInfiniteScroll = function (
     )
     
     const observer: IntersectionObserver = new IntersectionObserver(
+        console.log("Test");
         (entries, observer) => {
             if (!entries[0].isIntersecting) return;
             
